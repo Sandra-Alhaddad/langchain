@@ -12,7 +12,7 @@ class CobolSegmenter(CodeSegmenter):
         re.IGNORECASE,
     )
     DIVISION_PATTERN = re.compile(
-        r"^\s*(IDENTIFICATION|DATA|PROCEDURE|ENVIRONMENT)\s+DIVISION.*$", re.IGNORECASE
+        r"^\s*(IDENTIFICATION|ID|DATA|PROCEDURE|ENVIRONMENT)\s+DIVISION.*$", re.IGNORECASE
     )
     SECTION_PATTERN = re.compile(r"^\s*[A-Z0-9\-]+\s+SECTION.$", re.IGNORECASE)
 
